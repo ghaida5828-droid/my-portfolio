@@ -1,0 +1,454 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#14243B">
+<meta name="description" content="Ghaida Alanzi's portfolio showcasing projects, certifications, and achievements.">
+<title>Ghaida Alanzi | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<header>
+  <nav class="container">
+    <a href="#home" class="logo">GA<span>.</span></a>
+    <div class="nav-links">
+      <a href="#about" data-en="About" data-ar="نبذة عني">About</a>
+      <a href="#projects" data-en="Projects" data-ar="المشاريع">Projects</a>
+      <a href="#certifications" data-en="Certificates" data-ar="الشهادات">Certificates</a>
+      <a href="#achievements" data-en="Activities" data-ar="الأنشطة">Activities</a>
+      <a href="#journey" data-en="Journey" data-ar="مسيرتي">Journey</a>
+      <a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a>
+      <button class="lang-btn" id="langBtn" type="button" onclick="toggleLanguage()">عربي</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container">
+    <div class="eyebrow" data-en="WELCOME TO MY PORTFOLIO" data-ar="مرحبًا بكم في ملف إنجازاتي">WELCOME TO MY PORTFOLIO</div>
+    <h1 data-en="Ghaida Alanzi" data-ar="غيداء العنزي">Ghaida Alanzi</h1>
+    <h2 data-en="Computer Science Graduate" data-ar="خريجة علوم الحاسب والمعلومات">Computer Science Graduate</h2>
+    <p data-en="A collection of my projects, professional experiences, and achievements — documenting my journey and the work I am proud to share."
+       data-ar="مساحة تجمع مشاريعي وخبراتي وإنجازاتي، وتوثّق رحلتي وما أفتخر بمشاركته.">
+      A collection of my projects, professional experiences, and achievements — documenting my journey and the work I am proud to share.
+    </p>
+    <a href="#projects" class="btn btn-gold" data-en="Explore My Work" data-ar="استكشف أعمالي">Explore My Work</a>
+    <a href="#contact" class="btn btn-outline" data-en="Get in Touch" data-ar="تواصل معي">Get in Touch</a>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container">
+    <div class="section-label" data-en="ABOUT ME" data-ar="نبذة عني">ABOUT ME</div>
+    <h2 class="section-title" data-en="Where Technology Meets Purpose" data-ar="حين تلتقي التقنية بالهدف">Where Technology Meets Purpose</h2>
+    <p class="intro"
+       data-en="Computer Science graduate from Princess Nourah bint Abdulrahman University with strong interest in Project Management and Data analyst. This portfolio showcases my academic projects, cooperative training experience, and participation in innovation initiatives and hackathons."
+       data-ar=" خريجة تخصص علوم الحاسب والمعلومات من جامعة الأميرة نورة بنت عبدالرحمن , مهتمه بإدارة المشاريع وتحليل البيانات . يعرض هذا الموقع مشاريعي الأكاديمية وخبرتي في التدريب التعاوني ومشاركتي في المبادرات الابتكارية والهاكاثونات.">
+      I am a Computer Science graduate from Princess Nourah bint Abdulrahman University with strong interest in Project Management and Data analyst. This portfolio showcases my academic projects, cooperative training experience, and participation in innovation initiatives and hackathons.
+    </p>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <div class="section-label" data-en="SELECTED WORK" data-ar="أبرز الأعمال">SELECTED WORK</div>
+    <h2 class="section-title" data-en="Featured Projects" data-ar="المشاريع الرئيسية">Featured Projects</h2>
+    <p class="intro" data-en="Three key projects from my academic and professional journey."
+       data-ar="ثلاثة مشاريع رئيسية من رحلتي الأكاديمية والمهنية.">Three key projects from my academic and professional journey.</p>
+
+    <div class="project-grid">
+      <article class="project-card">
+        <img class="project-image" src="baseer.png" alt="Baseer project visual" onerror="this.style.display='none'">
+        <div class="project-body">
+          <div class="project-type" data-en="HACKATHON PROJECT" data-ar="مشروع هاكاثون">HACKATHON PROJECT</div>
+          <h3>Baseer | بصير</h3>
+          <p data-en="An assistive solution designed to simplify consent-signing procedures for people with disabilities who cannot use their hands."
+             data-ar="حل تقني مساعد يهدف إلى تسهيل إجراءات التوقيع على الموافقات للأشخاص ذوي الإعاقة الذين لا يستطيعون استخدام أيديهم.">
+            An assistive solution designed to simplify consent-signing procedures for people with disabilities who cannot use their hands.
+          </p>
+          <div class="project-number">01 / HACKATHON</div>
+          <button class="featured-project-link" type="button"
+            onclick="openProject('baseer')"
+            data-en="View project details ↗"
+            data-ar="عرض تفاصيل المشروع ↗">
+            View project details ↗
+            </button>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img class="project-image" src="emaa.png" alt="Emaa graduation project visual" onerror="this.style.display='none'">
+        <div class="project-body">
+          <div class="project-type" data-en="GRADUATION PROJECT" data-ar="مشروع التخرج">GRADUATION PROJECT</div>
+          <h3>Emaa | إيماء</h3>
+          <p data-en="A communication platform that helps people with hearing or speech disabilities communicate with service providers in public places, including restaurants, cafés, and pharmacies."
+             data-ar="منصة تواصل تساعد الأشخاص ذوي الإعاقة السمعية أو النطقية على التواصل مع مقدمي الخدمات في الأماكن العامة، مثل المطاعم والمقاهي والصيدليات.">
+            A communication platform that helps people with hearing or speech disabilities communicate with service providers in public places, including restaurants, cafés, and pharmacies.
+          </p>
+          <div class="project-number">02 / GRADUATION</div>
+          <button class="featured-project-link" type="button"
+  onclick="openProject('emaa')"
+  data-en="View project details ↗"
+  data-ar="عرض تفاصيل المشروع ↗">
+  View project details ↗
+</button>
+          
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img class="project-image" src="read-mrz.png" alt="ReadMRZ project icon" onerror="this.style.display='none'">
+        <div class="project-body">
+          <div class="project-type" data-en="COOPERATIVE TRAINING" data-ar="التدريب التعاوني">COOPERATIVE TRAINING</div>
+          <h3>ReadMRZ</h3>
+          <p data-en="A solution for reading machine-readable zones (MRZ) in passports and identity documents and automatically extracting document-holder information."
+             data-ar="حل تقني لقراءة منطقة القراءة الآلية (MRZ) في جوازات السفر والهويات واستخراج بيانات حامل الوثيقة تلقائيًا.">
+            A solution for reading machine-readable zones (MRZ) in passports and identity documents and automatically extracting document-holder information.
+          </p>
+          <div class="project-number">03 / TAMAKEEN</div>
+          <button class="featured-project-link" type="button"
+  onclick="openProject('readmrz')"
+  data-en="View project details ↗"
+  data-ar="عرض تفاصيل المشروع ↗">
+  View project details ↗
+</button>
+        </div>
+      </article>
+    </div>
+
+    <h3 class="subsection-title" data-en="Other Projects" data-ar="مشاريع أخرى">Other Projects</h3>
+    <p class="subsection-intro" data-en="Explore these projects to learn more about their goals, proposed features, and my contribution."
+       data-ar="اضغط على أي مشروع للتعرّف على فكرته وميزاته المقترحة ومساهمتي فيه.">
+      Explore these projects to learn more about their goals, proposed features, and my contribution.
+    </p>
+
+    <div class="project-grid">
+      <article class="project-card mini-project">
+        <div class="project-type" data-en="ACADEMIC PROPOSAL" data-ar="مقترح أكاديمي">ACADEMIC PROPOSAL</div>
+        <h3>Sehhati+</h3>
+        <p data-en="AI-powered emergency healthcare management concept."
+           data-ar="مقترح لتطوير إدارة الحالات الصحية الطارئة باستخدام الذكاء الاصطناعي.">AI-powered emergency healthcare management concept.</p>
+        <button class="text-link" type="button" onclick="openProject('sehhati')" data-en="View project details ↗" data-ar="عرض تفاصيل المشروع ↗">View project details ↗</button>
+      </article>
+
+      <article class="project-card mini-project">
+        <div class="project-type" data-en="ACADEMIC PROJECT" data-ar="مشروع أكاديمي">ACADEMIC PROJECT</div>
+        <h3 data-en="Online Library System" data-ar="نظام المكتبة الإلكتروني">Online Library System</h3>
+        <p data-en="A library-management prototype with different user roles."
+           data-ar="نموذج أولي لنظام إدارة مكتبة بصلاحيات مختلفة للمستخدمين.">A library-management prototype with different user roles.</p>
+        <button class="text-link" type="button" onclick="openProject('library')" data-en="View project details ↗" data-ar="عرض تفاصيل المشروع ↗">View project details ↗</button>
+      </article>
+
+      <article class="project-card mini-project">
+        <div class="project-type" data-en="ACADEMIC PROJECT" data-ar="مشروع أكاديمي">ACADEMIC PROJECT</div>
+        <h3 data-en="Student Attendance & Exit System" data-ar="نظام حضور وانصراف الطلاب">Student Attendance &amp; Exit System</h3>
+        <p data-en="System analysis and project planning for safer school dismissal."
+           data-ar="تحليل نظام وتخطيط مشروع لتنظيم انصراف الطلاب وتعزيزه بالسلامة.">System analysis and project planning for safer school dismissal.</p>
+        <button class="text-link" type="button" onclick="openProject('attendance')" data-en="View project details ↗" data-ar="عرض تفاصيل المشروع ↗">View project details ↗</button>
+      </article>
+
+      <article class="project-card mini-project">
+        <div class="project-type" data-en="UI/UX DESIGN" data-ar="تصميم واجهات المستخدم">UI/UX DESIGN</div>
+        <h3>Color App Redesign</h3>
+        <p data-en="A friendlier, child-focused redesign of an educational app."
+           data-ar="إعادة تصميم تطبيق تعليمي بألوان وواجهات أكثر ملاءمة للأطفال.">A friendlier, child-focused redesign of an educational app.</p>
+        <button class="text-link" type="button" onclick="openProject('color')" data-en="View project details ↗" data-ar="عرض تفاصيل المشروع ↗">View project details ↗</button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="alt-section" id="certifications">
+  <div class="container">
+    <div class="section-label" data-en="PROFESSIONAL DEVELOPMENT" data-ar="التطوير المهني">PROFESSIONAL DEVELOPMENT</div>
+    <h2 class="section-title" data-en="Certifications" data-ar="الشهادات">Certifications</h2>
+    <p class="intro" data-en="Professional and technical learning across project management, networking, databases, AI, and web development."
+       data-ar="شهادات مهنية وتقنية في إدارة المشاريع والشبكات وقواعد البيانات والذكاء الاصطناعي وتطوير الويب.">
+      Professional and technical learning across project management, networking, databases, AI, and web development.
+    </p>
+
+    
+<div class="certificate-grid">
+  <article class="certificate-card featured-cert">
+    <div class="certificate-icon">✦</div>
+
+    <div class="project-type" data-en="PROJECT MANAGEMENT" data-ar="إدارة المشاريع">
+      PROJECT MANAGEMENT
+    </div>
+
+    <h3>CAPM — Certified Associate in Project Management</h3>
+
+    <p>Project Management Institute (PMI)</p>
+
+    <p class="cert-date"
+       data-en="Issued May 2025 · Expires May 2028"
+       data-ar="صدرت في مايو 2025 · تنتهي في مايو 2028">
+      Issued May 2025 · Expires May 2028
+    </p>
+<button
+  class="cert-link"
+  type="button"
+  onclick="openCertificate('certificates/capm.pdf', 'CAPM Certificate')"
+  data-en="View Certificate ↗"
+  data-ar="عرض الشهادة ↗"
+>
+  View Certificate ↗
+</button>
+  </article>
+</div>
+
+
+      <article class="certificate-card">
+        <div class="certificate-icon">⌘</div>
+        <h3>Introduction to Networks</h3>
+        <p>Cisco Networking Academy</p>
+        <p class="cert-date" data-en="Issued May 2024" data-ar="صدرت في مايو 2024">Issued May 2024</p>
+        <button class="cert-link" type="button"
+  onclick="openCertificate('certificates/introduction-to-networks.pdf', 'Introduction to Networks')"
+  data-en="View Certificate ↗" data-ar="عرض الشهادة ↗">
+  View Certificate ↗
+</button>
+      </article>
+
+      <article class="certificate-card">
+        <div class="certificate-icon">▤</div>
+        <h3>Database Foundations</h3>
+        <p>Oracle Academy</p>
+        <p class="cert-date" data-en="Issued October 2023" data-ar="صدرت في أكتوبر 2023">Issued October 2023</p>
+        <button class="cert-link" type="button"
+  onclick="openCertificate('certificates/database-foundations.pdf', 'Database Foundations')"
+  data-en="View Certificate ↗" data-ar="عرض الشهادة ↗">
+  View Certificate ↗
+</button>
+      </article>
+
+      <article class="certificate-card">
+        <div class="certificate-icon">✧</div>
+        <h3 data-en="AI Fundamentals" data-ar="مبادئ الذكاء الاصطناعي">AI Fundamentals</h3>
+        <p>SDAIA</p>
+        <p class="cert-date" data-en="Issued September 2025" data-ar="صدرت في سبتمبر 2025">Issued September 2025</p>
+        <button class="cert-link" type="button"
+  onclick="openCertificate('certificates/ai-fundamentals.pdf', 'AI Fundamentals')"
+  data-en="View Certificate ↗" data-ar="عرض الشهادة ↗">
+  View Certificate ↗
+</button>
+      </article>
+
+      <article class="certificate-card">
+        <div class="certificate-icon">✧</div>
+        <h3 data-en="Advanced AI Applications" data-ar="مفاهيم الذكاء الاصطناعي وتطبيقاته المتقدمة">Advanced AI Applications</h3>
+        <p>SDAIA</p>
+        <p class="cert-date" data-en="Issued September 2025" data-ar="صدرت في سبتمبر 2025">Issued September 2025</p>
+        <button class="cert-link" type="button"
+  onclick="openCertificate('certificates/advanced-ai.pdf', 'Advanced AI Applications')"
+  data-en="View Certificate ↗" data-ar="عرض الشهادة ↗">
+  View Certificate ↗
+</button>
+</article>
+
+      <article class="certificate-card">
+        <div class="certificate-icon">⌘</div>
+        <h3>HCIA-AI V3.0 Course</h3>
+        <p>Huawei</p>
+        <p class="cert-date" data-en="Issued July 2023" data-ar="صدرت في يوليو 2023">Issued July 2023</p>
+        <button class="cert-link" type="button"
+  onclick="openCertificate('certificates/hcia-ai.pdf', 'HCIA-AI V3.0 Course')"
+  data-en="View Certificate ↗" data-ar="عرض الشهادة ↗">
+  View Certificate ↗
+</button>
+</article>
+
+      <article class="certificate-card">
+        <div class="certificate-icon">‹/›</div>
+        <h3>Full Stack Web Development</h3>
+        <p>Amazon</p>
+        <p class="cert-date" data-en="Issued October 2025" data-ar="صدرت في أكتوبر 2025">Issued October 2025</p>
+        <button class="cert-link" type="button"
+  onclick="openCertificate('certificates/full-stack-web-development.pdf', 'Full Stack Web Development')"
+  data-en="View Certificate ↗" data-ar="عرض الشهادة ↗">
+  View Certificate ↗
+</button>
+</article>
+    </div>
+  </div>
+</section>
+
+<section id="achievements">
+  <div class="container">
+    <div class="section-label" data-en="BEYOND THE CLASSROOM" data-ar="ما وراء الدراسة">BEYOND THE CLASSROOM</div>
+    <h2 class="section-title" data-en="Achievements & Activities" data-ar="الإنجازات والأنشطة">Achievements &amp; Activities</h2>
+    <p class="intro" data-en="Experiences that reflect my teamwork, contribution, and community involvement."
+       data-ar="تجارب تعكس العمل الجماعي والمساهمة والمشاركة المجتمعية.">
+      Experiences that reflect my teamwork, contribution, and community involvement.
+    </p>
+
+    <div class="achievement-grid">
+      <article class="achievement-card">
+        <div class="achievement-icon">✧</div>
+        <div class="project-type" data-en="HACKATHON FINALIST" data-ar="التأهل للمرحلة النهائية">HACKATHON FINALIST</div>
+        <h3>Health-Thon — King Saud University</h3>
+        <p data-en="Reached the final stage as the team's primary programmer, contributing to the technical development of the project."
+           data-ar="التأهل للمرحلة النهائية بصفتي المبرمجة الرئيسية في الفريق، والمساهمة في التطوير التقني للمشروع.">
+          Reached the final stage as the team's primary programmer, contributing to the technical development of the project.
+        </p>
+        <div class="tags"><span class="tag" data-en="Finalist" data-ar="متأهلة للنهائي">Finalist</span><span class="tag" data-en="Programming" data-ar="البرمجة">Programming</span></div>
+      </article>
+
+      <article class="achievement-card">
+        <div class="achievement-icon">♡</div>
+        <div class="project-type" data-en="VOLUNTEERING" data-ar="التطوع">VOLUNTEERING</div>
+        <h3 data-en="Agyalna Al-Waedah" data-ar="أجيالنا الواعدة">Agyalna Al-Waedah</h3>
+        <p data-en="Volunteering and community participation over approximately four years."
+           data-ar="المشاركة في العمل التطوعي والمجتمعي لمدة تقارب أربع سنوات.">
+          Volunteering and community participation over approximately four years.
+        </p>
+        <div class="tags"><span class="tag" data-en="Community" data-ar="المجتمع">Community</span><span class="tag" data-en="Volunteering" data-ar="التطوع">Volunteering</span></div>
+      </article>
+
+      <article class="achievement-card">
+        <div class="achievement-icon">◇</div>
+        <div class="project-type" data-en="UNIVERSITY ACTIVITIES" data-ar="الأنشطة الجامعية">UNIVERSITY ACTIVITIES</div>
+        <h3 data-en="Software Engineering Committee" data-ar="لجنة هندسة البرمجيات">Software Engineering Committee</h3>
+        <p data-en="Participated as a member of the Software Engineering Committee."
+           data-ar="المشاركة كعضوة في لجنة هندسة البرمجيات.">
+          Participated as a member of the Software Engineering Committee.
+        </p>
+        <div class="tags"><span class="tag" data-en="Teamwork" data-ar="العمل الجماعي">Teamwork</span><span class="tag" data-en="University" data-ar="الجامعة">University</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="journey">
+  <div class="container">
+    <div class="section-label" data-en="CAREER JOURNEY" data-ar="المسيرة المهنية">CAREER JOURNEY</div>
+    <h2 class="section-title" data-en="My Journey So Far" data-ar="محطات من رحلتي">My Journey So Far</h2>
+   <div class="timeline-item">
+  <div class="timeline-date">Oct 2026</div>
+
+  <div class="timeline-content">
+    <h3
+      data-en="Health-Thon Hackathon"
+      data-ar="هاكاثون هيلثون">
+      Health-Thon Hackathon
+    </h3>
+
+    <p
+      data-en="Participated as a backend programmer in the Health-Thon Hackathon at King Saud University."
+      data-ar="شاركت كمبرمجة للواجهة الخلفية في هاكاثون هيلثون بجامعة الملك سعود.">
+      Participated as a backend programmer in the Health-Thon Hackathon at King Saud University.
+    </p>
+
+   
+  </div>
+</div>
+      <div class="timeline-item">
+        <div class="timeline-date">June 2026</div>
+        <div class="timeline-content">
+          <h3 data-en="Bachelor's Degree" data-ar="الحصول على درجة البكالوريوس">Bachelor's Degree</h3>
+          <p data-en="Graduated from Princess Nourah bint Abdulrahman University with a Bachelor's degree in Computer Science and Information."
+             data-ar="التخرج من جامعة الأميرة نورة بنت عبدالرحمن بدرجة البكالوريوس في علوم الحاسب والمعلومات.">
+            Graduated from Princess Nourah bint Abdulrahman University with a Bachelor's degree in Computer Science and Information.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">Jan 2026</div>
+        <div class="timeline-content">
+          <h3 data-en="Cooperative Training" data-ar="التدريب التعاوني">Cooperative Training</h3>
+          <p data-en="Completed cooperative training at Tamkeen Technologies."
+             data-ar="التدريب التعاوني في شركة تمكين للتقنيات.">Completed cooperative training at Tamkeen Technologies.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">May 2025</div>
+        <div class="timeline-content">
+          <h3>CAPM Certification</h3>
+          <p data-en="Earned the Certified Associate in Project Management (CAPM) credential."
+             data-ar="الحصول على شهادة مساعد معتمد في إدارة المشاريع (CAPM).">
+            Earned the Certified Associate in Project Management (CAPM) credential.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date"> Aug 2022</div>
+        <div class="timeline-content">
+          <h3 data-en="University Admission" data-ar="القبول الجامعي">University Admission</h3>
+          <p data-en="Started my academic journey at Princess Nourah bint Abdulrahman University."
+             data-ar="بداية رحلتي الجامعية في جامعة الأميرة نورة بنت عبدالرحمن.">
+            Started my academic journey at Princess Nourah bint Abdulrahman University.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-label" data-en="LET'S CONNECT" data-ar="لنبقَ على تواصل">LET'S CONNECT</div>
+    <h2 class="section-title" data-en="Thank You for Visiting" data-ar="شكرًا لزيارتك">Thank You for Visiting</h2>
+    <p data-en="For professional opportunities and connections, feel free to reach out."
+       data-ar="للفرص المهنية والتواصل، يسعدني التواصل معكم.">
+      For professional opportunities and connections, feel free to reach out.
+    </p>
+    <div class="contact-links">
+      <a href="https://www.linkedin.com/in/ghaida-alanzi-b6161231a" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+      <a href="mailto:ghaidaalsayerr@gmail.com">Email ↗</a>
+      <a href="tel:+966539505717">
+  <i class="fas fa-phone"></i>
+  Phone number ↗
+</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Ghaida Alanzi. <span data-en="All rights reserved." data-ar="جميع الحقوق محفوظة.">All rights reserved.</span></p>
+</footer>
+
+<!-- Project details modal -->
+<div class="modal-backdrop" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+  <div class="modal">
+    <button class="modal-close" type="button" onclick="closeProject()" aria-label="Close dialog">×</button>
+    <div class="modal-kicker" id="modalKicker"></div>
+    <h2 id="modalTitle"></h2>
+    <p class="modal-subtitle" id="modalSubtitle"></p>
+    <div id="modalContent"></div>
+    <div class="modal-footer" id="modalFooter"></div>
+  </div>
+</div>
+
+<div
+  class="certificate-modal"
+  id="certificateModal"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="certificateTitle"
+  aria-hidden="true"
+>
+  <div class="certificate-window">
+    <div class="certificate-toolbar">
+      <h3 id="certificateTitle">CAPM Certificate</h3>
+
+      <button
+        class="certificate-close"
+        type="button"
+        onclick="closeCertificate()"
+        aria-label="Close certificate"
+      >×</button>
+    </div>
+
+    <img id="certificateImage" class="certificate-frame" alt="CAPM Certificate">
+<iframe id="certificateFrame" class="certificate-frame" title="Certificate preview"></iframe>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
